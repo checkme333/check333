@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solana钱包代币筛选器</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Solana Web3.js -->
+    <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Solana钱包代币筛选器</h1>
+        
+        <div class="wallet-input">
+            <input type="text" id="walletAddress" placeholder="输入钱包地址" style="flex: 2;">
+            <input type="text" id="walletNote" placeholder="备注" style="flex: 1;">
+            <button onclick="addWallet()">添加钱包</button>
+        </div>
+
+        <div class="wallet-list" id="walletList">
+            <!-- 钱包列表将在这里动态生成 -->
+        </div>
+
+        <button onclick="findCommonTokens()">查找共同代币</button>
+
+        <div class="token-results" id="tokenResults">
+            <!-- 代币结果将在这里显示 -->
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
