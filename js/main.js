@@ -1,5 +1,5 @@
 // 初始化 Solana 连接
-const connection = new solanaWeb3.Connection('https://api.mainnet-beta.solana.com');
+const connection = new solanaWeb3.Connection('https://sleek-wispy-valley.SOLANA_MAINNET.quiknode.pro/f4518761755c013f2f7dea60584bead5b8a1c796');
 
 let wallets = [];
 
